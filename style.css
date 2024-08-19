@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    background: #608081;
+    overflow: hidden;
+  }
+  
+  .toggle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, #80c0a1 -50%, #30d031 150%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .toggle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(data:image/png;base64,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);
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+  .toggle:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    box-shadow: inset 0 0.1rem 0.4rem 0 black;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  .toggle:hover:after {
+    box-shadow: inset 0 0.1rem 0.6rem 0 black;
+  }
+  .toggle__ball {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+    background: radial-gradient(circle at 50% 10%, #fff, #000038 120%);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    border-radius: 50%;
+    box-shadow: -0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 56, 0.5);
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.59, 0.3, 0.5, 1.4);
+    transition-delay: 0.75s;
+  }
+  .toggle__ball:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 0 0;
+    background-size: 1rem 1rem;
+    background-image: radial-gradient(circle, #000038 -400%, #fff 0.5rem);
+    opacity: 0.5;
+    transform: rotate(45deg);
+    transition: background-position 1s cubic-bezier(0.59, 0.3, 0.5, 1.4);
+    transition-delay: 0.75s;
+  }
+  .toggle--active .toggle__ball {
+    left: 11rem;
+    background-position: 100% 0;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 56, 0.5);
+  }
+  .toggle--active .toggle__ball:before {
+    background-position: 100% -100%;
+  }
+  .toggle--no-events {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .stick {
+    position: absolute;
+    z-index: 1;
+    top: -16rem;
+    left: calc(50% - 0.75rem);
+    width: 1.5rem;
+    height: 50vh;
+    transform-origin: top;
+    transition: all 0.5s ease;
+  }
+  .stick:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: linear-gradient(90deg, #000038 -120%, #c3c3d3 40%, #c3c3d3 60%, #000038 220%);
+    border-radius: 0.5rem;
+  }
+  .stick__head {
+    position: absolute;
+    bottom: -10rem;
+    left: -0.75rem;
+    width: 3rem;
+    height: 12rem;
+    border-radius: 60% 60% 1rem 3rem;
+    background: linear-gradient(90deg, #000038 -50%, #c3c3d3 25%, #c3c3d3 75%, #000038 150%);
+    box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 56, 0.2);
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .stick__head:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(-45deg, transparent 10%, #fff 30%, transparent 80%);
+  }
+  .stick--left {
+    top: -4rem;
+    left: calc(50% - 9.5rem);
+    transform: rotate(20deg);
+    animation: hit-left;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hit-left {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(3deg);
+    }
+  }
+  .stick--left .stick__head {
+    box-shadow: -0.5rem 1rem 1rem 0.5rem rgba(0, 0, 56, 0.2);
+  }
+  .stick--right {
+    top: -4rem;
+    left: calc(50% + 8rem);
+    transform: rotate(-20deg);
+    animation: hit-right;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hit-right {
+    0% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+  .stick--right .stick__head {
+    box-shadow: 0.5rem 1rem 1rem 0.5rem rgba(0, 0, 56, 0.2);
+  }
